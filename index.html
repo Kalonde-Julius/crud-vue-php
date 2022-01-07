@@ -324,5 +324,16 @@
       });
 
     </script>
+    
+    <script type="text/javascript">
+      if (!window.openDatabase) {
+            var browserCompatibilityWebSqlUI = '<div class="alert alert-warning">' +
+                '<strong>Warning !</strong> Your Browser does not support HTML5 offline Database (WebSql) <br/> To see the demo please open in latest version of Safari, Chrome and Opera.' +
+                '</div>';
+
+            $("#browserCompatibilityWebSql").html(browserCompatibilityWebSqlUI);
+        }
+    </script>
   </body>
+  
 </html>
